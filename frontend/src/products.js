@@ -14,7 +14,7 @@ const products = [
     _id: "2",
     name: "Peroxide Cleaner",
     price: 120.0,
-    countInStock: 10,
+    countInStock: 0,
     rating: 4,
     numReviews: 5,
     description:
@@ -67,7 +67,7 @@ const products = [
   },
   {
     _id: "7",
-    name: "TurfScrub Floor Pad 13inch",
+    name: "TurfScrub Floor Pad",
     price: 44.0,
     countInStock: 10,
     rating: 4.5,
@@ -75,54 +75,55 @@ const products = [
     description:
       "The TurfScrub provides brush scrubbing action in a pad. Now there is no need for expensive brushes and the time consuming process of changing cumbersome brush driver blocks when you want to scrub uneven surfaces.",
     image: "/images/circle_pad.png",
+    sizes: [13, 14, 17, 20],
   },
-  {
-    _id: "8",
-    name: "TurfScrub Floor Pad 14inch",
-    price: 45.0,
-    countInStock: 10,
-    rating: 4.5,
-    numReviews: 5,
-    description:
-      "The TurfScrub provides brush scrubbing action in a pad. Now there is no need for expensive brushes and the time consuming process of changing cumbersome brush driver blocks when you want to scrub uneven surfaces.",
-    image: "/images/circle_pad.png",
-  },
-  {
-    _id: "9",
-    name: "TurfScrub Floor Pad 17inch",
-    price: 51.0,
-    countInStock: 10,
-    rating: 3,
-    numReviews: 25,
-    description:
-      "The TurfScrub provides brush scrubbing action in a pad. Now there is no need for expensive brushes and the time consuming process of changing cumbersome brush driver blocks when you want to scrub uneven surfaces.",
-    image: "/images/circle_pad.png",
-  },
-  {
-    _id: "10",
-    name: "TurfScrub Floor Pad 20inch",
-    price: 74.0,
-    countInStock: 10,
-    rating: 3.5,
-    numReviews: 45,
-    description:
-      "The TurfScrub provides brush scrubbing action in a pad. Now there is no need for expensive brushes and the time consuming process of changing cumbersome brush driver blocks when you want to scrub uneven surfaces.",
-    image: "/images/circle_pad.png",
-  },
-  {
-    _id: "11",
-    name: "TurfScrub Floor Pad 12inch x 18inch",
-    price: 48.0,
-    countInStock: 10,
-    rating: 4.5,
-    numReviews: 2,
-    description:
-      "The TurfScrub provides brush scrubbing action in a pad. Now there is no need for expensive brushes and the time consuming process of changing cumbersome brush driver blocks when you want to scrub uneven surfaces.",
-    image: "/images/floor_pad.png",
-  },
+  // {
+  //   _id: "8",
+  //   name: "TurfScrub Floor Pad",
+  //   price: 45.0,
+  //   countInStock: 10,
+  //   rating: 4.5,
+  //   numReviews: 5,
+  //   description:
+  //     "The TurfScrub provides brush scrubbing action in a pad. Now there is no need for expensive brushes and the time consuming process of changing cumbersome brush driver blocks when you want to scrub uneven surfaces.",
+  //   image: "/images/circle_pad.png",
+  // },
+  // {
+  //   _id: "9",
+  //   name: "TurfScrub Floor Pad",
+  //   price: 51.0,
+  //   countInStock: 10,
+  //   rating: 3,
+  //   numReviews: 25,
+  //   description:
+  //     "The TurfScrub provides brush scrubbing action in a pad. Now there is no need for expensive brushes and the time consuming process of changing cumbersome brush driver blocks when you want to scrub uneven surfaces.",
+  //   image: "/images/circle_pad.png",
+  // },
+  // {
+  //   _id: "10",
+  //   name: "TurfScrub Floor Pad",
+  //   price: 74.0,
+  //   countInStock: 10,
+  //   rating: 3.5,
+  //   numReviews: 45,
+  //   description:
+  //     "The TurfScrub provides brush scrubbing action in a pad. Now there is no need for expensive brushes and the time consuming process of changing cumbersome brush driver blocks when you want to scrub uneven surfaces.",
+  //   image: "/images/circle_pad.png",
+  // },
+  // {
+  //   _id: "11",
+  //   name: "TurfScrub Floor Pad",
+  //   price: 48.0,
+  //   countInStock: 10,
+  //   rating: 4.5,
+  //   numReviews: 2,
+  //   description:
+  //     "The TurfScrub provides brush scrubbing action in a pad. Now there is no need for expensive brushes and the time consuming process of changing cumbersome brush driver blocks when you want to scrub uneven surfaces.",
+  //   image: "/images/floor_pad.png",
+  // },
   {
     _id: "12",
-    name: "TurfScrub Floor Pad 14inch x 20inch",
+    name: "TurfScrub Floor Pad",
     price: 62.0,
     countInStock: 10,
     rating: 5,
@@ -130,6 +131,7 @@ const products = [
     description:
       "The TurfScrub provides brush scrubbing action in a pad. Now there is no need for expensive brushes and the time consuming process of changing cumbersome brush driver blocks when you want to scrub uneven surfaces.",
     image: "/images/floor_pad.png",
+    sizes: ["12x18", "14x20"],
   },
   {
     _id: "13",

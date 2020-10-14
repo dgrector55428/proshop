@@ -1,0 +1,12 @@
+.product-view-image {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  display: block;
+  padding: 20px;
+}
+
+.out-of-stock-text {
+  color: firebrick;
+  font-weight: bold;
+}
