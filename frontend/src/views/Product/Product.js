@@ -16,11 +16,11 @@ const Product = ({ match }) => {
 
   return (
     <>
-      <Link className="btn btn-outline-info my-3 rounded" to="/">
+      <Link className="btn btn-outline-dark my-3 mr-10" to="/">
         Go Back
       </Link>
       <Row>
-        <Col md={6}>
+        <Col md={4}>
           <Image
             src={product.image}
             alt={product.name}
@@ -28,11 +28,12 @@ const Product = ({ match }) => {
             fluid
           />
         </Col>
-        <Col md={3}>
+        <Col md={4}>
           <ListGroup variant="flush">
             <ListGroup.Item>
               <h3>{product.name}</h3>
             </ListGroup.Item>
+
             <ListGroup.Item>
               <Rating
                 value={product.rating}
@@ -43,7 +44,7 @@ const Product = ({ match }) => {
             <ListGroup.Item>Description: {product.description}</ListGroup.Item>
           </ListGroup>
         </Col>
-        <Col md={3}>
+        <Col md={4}>
           <Card>
             <ListGroup variant="flush">
               {sizeOptions ? (
@@ -71,15 +72,13 @@ const Product = ({ match }) => {
                   </Col>
                 </Row>
               </ListGroup.Item>
-              <ListGroup.Item>
-                <Button
-                  className="btn-block"
-                  type="button"
-                  disabled={product.countInStock === 0}
-                >
-                  Add to Cart
-                </Button>
-              </ListGroup.Item>
+              {product.countInStock > 0 ? (
+                <ListGroup.Item>
+                  <button type="button" class="btn btn-dark btn-block">
+                    Add to Cart
+                  </button>
+                </ListGroup.Item>
+              ) : null}
             </ListGroup>
           </Card>
         </Col>

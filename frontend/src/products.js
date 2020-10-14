@@ -58,7 +58,7 @@ const products = [
     _id: "6",
     name: "Foamer Filler",
     price: 40.0,
-    countInStock: 10,
+    countInStock: 0,
     rating: 5,
     numReviews: 15,
     description:
@@ -148,7 +148,7 @@ const products = [
     _id: "14",
     name: "K’A’RCHER B40WBp Orbital Auto Scrubber – 20″",
     price: 7845.0,
-    countInStock: 10,
+    countInStock: 0,
     rating: 3.5,
     numReviews: 5,
     description:

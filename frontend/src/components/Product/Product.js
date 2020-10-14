@@ -5,6 +5,10 @@ import "./Product.css";
 import Rating from "../../components/Rating/Rating";
 
 const Product = ({ product }) => {
+  let sizeOptions;
+  if (product.sizes) {
+    sizeOptions = product.sizes;
+  }
   return (
     <Card className="my-3 p-3 rounded product-card">
       <Link to={`/product/${product._id}`}>
@@ -13,9 +17,12 @@ const Product = ({ product }) => {
       <Card.Body className="product-card-body">
         <Link to={`/product/${product._id}`}>
           <Card.Title as="div" className="product-card-title">
-            {product.name}
+            {product.name} <br />
           </Card.Title>
         </Link>
+        {product.countInStock < 1 ? (
+          <h4 style={{ color: "firebrick" }}>Out of stock</h4>
+        ) : null}
         <Card.Text as="div">
           <Rating
             value={product.rating}
